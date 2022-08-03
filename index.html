@@ -26,15 +26,35 @@
       }
       span {
         font-size: 14px;
-        text-align: right;
         font-weight: bold;
         margin-left: 10%;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: gray;
+        font-style: italic;
       }
       fieldset{
         border: 4px solid rgb(67, 174, 216);
       }
       legend{
         font-size: 25px;
+      }
+      #deneyim{
+        position: relative;
+        bottom: 35px;
+        display: inline-block;
+        width: 200px;
+      }
+      #prgdiller{
+        display: inline-block;
+        width: 200px;
+        position: relative;
+        bottom: 35px;
+      }
+      #sektor{
+        display: inline-block;
+        width: 200px;
       }
     </style>
   </head>
@@ -76,13 +96,13 @@
       </fieldset>
       <fieldset>
         <legend>Diğer Bilgiler</legend>
-        <span>Buradaki Alanlar Mesleki Deneyimi Kapsar</span><br />
-        <label for="giris">Sektöre Giriş Tarihi</label>
-        <input type="date" name="" id="giris" /><br />
-        <hr />
-        <!-- Sektör Deneyimi -->
-        <label for="">Sektör Deneyimi</label>
+        <span>* Buradaki Alanlar Mesleki Deneyimi Kapsar</span><br />
 
+        <!-- Sektör Deneyimi -->
+        <label for="giris" id="sektor">Sektöre Giriş Tarihi</label>
+        <input type="date" name="" id="giris" /><br /> <br>
+
+        <label for="" id="deneyim">Sektör Deneyimi</label>
         <div class="deneyim">
           <input type="radio" name="deneyim" id="1" />
           <label for="1">1-5 Yıl</label><br />
@@ -93,9 +113,10 @@
           <input type="radio" name="deneyim" id="4" />
           <label for="4">15-üzeri</label><br />
         </div>
-        <br />
+        <br /><br>
+        <!-- Sektör Deneyimi -->
 
-        <label for="diller">Programlama Dilleri</label>
+        <label for="diller" id="prgdiller">Programlama Dilleri</label>
         <select name="" id="diller" size="5">
           <option value="">C#</option>
           <option value="">PHP</option>
